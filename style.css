@@ -6,12 +6,6 @@
   transition: visibility 2s, opacity 0.5s linear;
 }
 
-canvas {
-  display: block;
-  margin: 1em auto;
-  box-shadow: 0 0 2em rgba(0,0,0,0.2);
-  border-radius: 1em;
-}
 
 button {
   display: inline-block;
@@ -81,3 +75,10 @@ html {
   opacity: 0;
   transition: 1s ease;
 }
+
+#header {
+  text-align: center;
+  font-size: 3em;
+  color: rgb(0, 0, 0);
+}
+

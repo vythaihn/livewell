@@ -18,7 +18,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.min.js"></script>
 
-	<script src="main.js"></script>
+	<script src="metrics.js"></script>
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -28,12 +28,13 @@
 	  <div class="collapse navbar-collapse" id="navbarToggler">
 	    <a class="navbar-brand" href="#"><b>Edit Portal</b></a>
 	    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Main</a>
+              </li>
 	      <li class="nav-item active">
-	        <a class="nav-link" href="#">Main<span class="sr-only">(current)</span></a>
+	        <a class="nav-link" href="#">Metrics<span class="sr-only">(current)</span></a>
 	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="metrics.html">Metrics</a>
-          </li>
+	      
           <li class="nav-item">
 	        <a class="nav-link" href="our_team.html">Our Team</a>
           </li>
@@ -45,9 +46,31 @@
 	</nav>
 
     <div id= "header">
-		Click on the section you would love to make changes!
-	</div>
-	<div id="root">
+         Update Metrics section
     </div>
+    
+    <form id="contact-form" method="post">
+        <h4>District:</h4>
+        <input type="number" style="height:35px;width:300px;"  id="district-input" placeholder="Enter updated number here…" class="form-control" /><br/>
+        <h4>Products sold:</h4>
+        <input type="number" style="height:35px;width:300px;" id="products-input" placeholder="Enter updated number here…" class="form-control" style="width:50%;"/><br/>
+        <h4>Beneficiaries: </h4>
+        <input type="number" style="height:35px;width:300px;" id="benefit-input" placeholder="Enter updated number here…" class="form-control" style="width:50%;"/><br/>
+        <h4>CHEs: </h4>
+        <input type="number" style="height:35px;width:300px;" id="che-input" placeholder="Enter updated number here…" class="form-control" style="width:50%;"/><br/>
+
+        <div class="g-recaptcha" data-sitekey="6Lc7cVMUAAAAAM1yxf64wrmO8gvi8A1oQ_ead1ys" class="form-control" style="width:50%;"></div>
+      <!--  <button type="button" onClick="submitToAPI(event)" class="btn btn-lg" style="margin-top:20px;">Submit</button>
+      --> 
+    </form>
+
+	<div id="root">
+    <div class="loading" style="display:none;">
+      <img src="loading.svg" alt="Loading...">
+    </div>
+  </div>
 </body>
 </html>
+
+
+
